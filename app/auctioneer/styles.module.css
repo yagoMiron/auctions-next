@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+.container {
+  @apply bg-gray-100 box-border max-w-4/5 w-md rounded-3xl flex flex-col items-center justify-center gap-2 overflow-hidden;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.title {
+  @apply font-bold text-3xl text-slate-200 bg-slate-700 w-full text-center p-2;
+}

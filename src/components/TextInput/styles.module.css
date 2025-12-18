@@ -1,0 +1,31 @@
+@reference "tailwindcss";
+
+.campo {
+  @apply flex flex-col w-full gap-1.5;
+}
+.campo label {
+  @apply text-left mx-1.5 text-xl text-slate-700 font-bold;
+}
+.campo input,
+.campo textarea,
+.campo select {
+  @apply w-full rounded-xl border border-slate-700 text-slate-700 text-xl py-2 px-4;
+}
+.campo select {
+  @apply bg-white;
+}
+.campo select {
+  @apply text-lg;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  @apply text-slate-500;
+}
+.campo input:focus,
+.campo textarea:focus,
+.campo select:focus {
+  @apply outline outline-slate-600;
+}

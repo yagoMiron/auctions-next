@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "created_at": "2025-12-01T10:00:00Z",
+    "title": "Notebook Gamer Acer",
+    "description": "Notebook gamer com placa de vídeo dedicada, ideal para jogos e edição.",
+    "photo_url": "https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/214573",
+    "starting_bid": 3500,
+    "highest_bid": 4200,
+    "highest_bidder": "joao.silva",
+    "status": "in_progress"
+  },
+  {
+    "id": 2,
+    "created_at": "2025-12-02T14:30:00Z",
+    "finished_at": "2025-12-05T18:00:00Z",
+    "title": "Smartphone Samsung Galaxy S22",
+    "description": "Smartphone Samsung Galaxy S22, 128GB, excelente estado.",
+    "photo_url": "https://http2.mlstatic.com/D_Q_NP_947098-MLA99972051333_112025-O.webp",
+    "starting_bid": 2500,
+    "highest_bid": 3100,
+    "highest_bidder": "maria.oliveira",
+    "status": "finalized"
+  },
+  {
+    "id": 3,
+    "created_at": "2025-12-03T09:15:00Z",
+    "title": "Câmera DSLR Canon EOS",
+    "description": "Câmera DSLR Canon EOS com lente 18-55mm, pouco uso.",
+    "photo_url": "https://m.media-amazon.com/images/I/712DNWFqmyL._AC_UF894,1000_QL80_.jpg",
+    "starting_bid": 1800,
+    "status": "in_progress"
+  },
+  {
+    "id": 4,
+    "created_at": "2025-12-04T11:45:00Z",
+    "finished_at": "2025-12-04T16:00:00Z",
+    "title": "Fone de Ouvido Bluetooth Sony",
+    "description": "Fone de ouvido Bluetooth Sony com cancelamento de ruído.",
+    "photo_url": "https://m.media-amazon.com/images/I/41lArSiD5hL.jpg",
+    "starting_bid": 600,
+    "highest_bid": 750,
+    "highest_bidder": "carlos.pereira",
+    "status": "cancelled"
+  },
+  {
+    "id": 5,
+    "created_at": "2025-12-05T08:00:00Z",
+    "title": "Console PlayStation 5",
+    "description": "Console PlayStation 5 com controle original e caixa.",
+    "photo_url": "https://m.media-amazon.com/images/I/51+qnZm7V7L.jpg",
+    "starting_bid": 3800,
+    "highest_bid": 4500,
+    "highest_bidder": "ana.lima",
+    "status": "in_progress"
+  }
+]
