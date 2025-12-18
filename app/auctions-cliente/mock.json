@@ -3,10 +3,10 @@
     "id": 1,
     "created_at": "2025-12-01T10:00:00Z",
     "title": "Notebook Gamer Acer",
-    "minutos": 89,
     "description": "Notebook gamer com placa de vídeo dedicada, ideal para jogos e edição.",
     "photo_url": "https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/214573",
     "starting_bid": 3500,
+    "minutos": 89,
     "highest_bid": 4200,
     "highest_bidder": "joao.silva",
     "status": "in_progress"
@@ -27,8 +27,8 @@
   {
     "id": 3,
     "created_at": "2025-12-03T09:15:00Z",
-    "minutos": 89,
     "title": "Câmera DSLR Canon EOS",
+    "minutos": 89,
     "description": "Câmera DSLR Canon EOS com lente 18-55mm, pouco uso.",
     "photo_url": "https://m.media-amazon.com/images/I/712DNWFqmyL._AC_UF894,1000_QL80_.jpg",
     "starting_bid": 1800,
@@ -37,8 +37,8 @@
   {
     "id": 4,
     "created_at": "2025-12-04T11:45:00Z",
-    "minutos": 89,
     "finished_at": "2025-12-04T16:00:00Z",
+    "minutos": 89,
     "title": "Fone de Ouvido Bluetooth Sony",
     "description": "Fone de ouvido Bluetooth Sony com cancelamento de ruído.",
     "photo_url": "https://m.media-amazon.com/images/I/41lArSiD5hL.jpg",

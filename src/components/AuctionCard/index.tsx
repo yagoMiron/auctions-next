@@ -1,5 +1,6 @@
 import Auction from "@/src/types/Auction";
 import Image from "next/image";
+import styles from "./styles.module.css";
 
 type Props = {
   auction: Auction;
@@ -7,7 +8,7 @@ type Props = {
 
 const AuctionCard = ({ auction }: Props) => {
   return (
-    <div className="flex gap-2 bg-white w-full border-b border-t rounded-2xl p-2">
+    <div className={styles.auctionCard}>
       <Image
         src={auction.photo_url}
         alt={auction.title}

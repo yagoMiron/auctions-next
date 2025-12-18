@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.auctionCard {
+  @apply flex gap-2 bg-white w-full border-b border-t rounded-2xl p-2;
+}

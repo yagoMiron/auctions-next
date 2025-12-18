@@ -8,3 +8,10 @@
 .title {
   @apply font-bold text-3xl text-slate-200 bg-slate-700 w-full text-center p-2;
 }
+
+.card_area {
+  @apply flex font-bold w-full h-full p-8 items-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}

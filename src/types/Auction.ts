@@ -4,6 +4,7 @@ type Auction = {
   finished_at?: string;
   title: string;
   description: string;
+  minutos: number;
   photo_url: string;
   starting_bid: number;
   highest_bid?: number;

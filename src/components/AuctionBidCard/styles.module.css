@@ -1,0 +1,14 @@
+@reference "tailwindcss";
+
+.auctionCard {
+  @apply flex flex-col gap-2 bg-white border-b border-t rounded-2xl p-2 items-center min-w-96;
+}
+.title {
+  @apply text-xl underline;
+}
+.contador {
+  @apply text-3xl text-red-500;
+}
+.bid {
+  @apply text-xl;
+}

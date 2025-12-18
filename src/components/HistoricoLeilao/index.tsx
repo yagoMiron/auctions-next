@@ -1,4 +1,3 @@
-import Auction from "@/src/types/Auction";
 import mock from "./mock.json";
 import AuctionCard from "../AuctionCard";
 
