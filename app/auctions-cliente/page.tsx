@@ -1,21 +1,44 @@
-import FormAuctioneer from "@/src/components/FormAuctioneer";
+"use client";
 import styles from "./styles.module.css";
-import mock from "./mock.json";
-import HistoricoLeilao from "@/src/components/HistoricoLeilao";
 import AuctionBidCard from "@/src/components/AuctionBidCard";
+import { socket } from "@/src/constants/conection";
+import Auction from "@/src/types/Auction";
+import { useEffect, useState } from "react";
 
-const Auctioneer = () => {
+const AuctionsCliente = () => {
+  const [auctions, setAuctions] = useState<Auction[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    function handleAuctionsList(data: Auction[]) {
+      // somente leilões ativos
+      const ativos = data.filter((auction) => auction.status === "in_progress");
+
+      setAuctions(ativos);
+      setLoading(false);
+    }
+
+    socket.on("auctions:list", handleAuctionsList);
+
+    return () => {
+      socket.off("auctions:list", handleAuctionsList);
+    };
+  }, []);
+
   return (
-    <div className="w-full flex items-center justify-evenly ">
+    <div className="w-full flex items-center justify-evenly">
       <div className={styles.container}>
         <h2 className={styles.title}>Leilões em andamento:</h2>
+
         <div className={styles.card_area}>
-          {mock.length > 0 ? (
-            mock.map((auction, index) => (
-              <AuctionBidCard auction={auction} key={index} />
+          {loading ? (
+            <p>Carregando leilões...</p>
+          ) : auctions.length > 0 ? (
+            auctions.map((auction) => (
+              <AuctionBidCard auction={auction} key={auction.id} />
             ))
           ) : (
-            <p>Não á leilões em andamento ainda</p>
+            <p>Não há leilões em andamento ainda</p>
           )}
         </div>
       </div>
@@ -23,4 +46,4 @@ const Auctioneer = () => {
   );
 };
 
-export default Auctioneer;
+export default AuctionsCliente;

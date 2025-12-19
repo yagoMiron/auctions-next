@@ -42,7 +42,7 @@ const AuctionBidCard = ({ auction }: Props) => {
         height={120}
       />
       <span className={styles.title}>{auction.title}</span>
-      <span className={styles.contador}>{formatarTempo(tempo * -1)}</span>
+      <span className={styles.contador}>{formatarTempo(Number(tempo))}</span>
       <span className={styles.bid}>
         {auction.highest_bid
           ? `Lance atual: R$ ${auction.highest_bid}`
